@@ -114,9 +114,12 @@ Ejemplos:
 ### Instalación
 
 **Proceso de instalación:**
-- **Descarga:** [Versión recomendada - Community/Professional]
-- **Componentes necesarios:** [Componentes específicos para C#]
-- **Verificación:** [Cómo confirmar instalación correcta]
+- **Descarga:** Dirígete a la página oficial de Visual Studio en (https://visualstudio.microsoft.com/es/) y descarga la versión Community, que es gratuita y suficiente para desarrollo en C#. 
+
+    ![clicken descargas](screensshoots/image1.png)
+- **Componentes necesarios:** Al abrir el instalador, selecciona la carga de trabajo Desarrollo de escritorio con .NET. Esta incluye todo lo necesario para crear y ejecutar aplicaciones en C#. Opcionalmente, puedes seleccionar ASP.NET y desarrollo web si planeas usar proyectos web más adelante.
+  
+- **Verificación:** Una vez finalizada la instalación, abre Visual Studio. En la ventana de inicio, haz clic en Crear un nuevo proyecto y verifica que aparece la opción Aplicación de consola (.NET Core / .NET 6/7/8). Si aparece, la instalación se ha realizado correctamente.
 
 ### Desarrollo con C#
 
