@@ -4,9 +4,9 @@
 
 > **Nota importante**: Este documento se enfoca en aspectos técnicos y procedimientos. Para análisis comparativos, reflexiones personales y conclusiones, utiliza el archivo `CONCLUSIONES_EVALUACION.md`.
 
-**Autores**: [Nombre 1] y [Nombre 2]
-**Fecha V0**: [Fecha de entrega inicial]
-**Fecha V1**: [Fecha de entrega final]
+**Autores**: Daniel Hernandez Singuña
+**Fecha V0**: 20/09/25
+**Fecha V1**: 19/12/25
 
 ---
 
@@ -18,12 +18,48 @@
 
 > **💡 Sobre las imágenes**: Incluye capturas de pantalla para mostrar los diferentes pasos o resultados. Ejemplo: ![Descripción clara del contenido](screenshots/placeholder.png)`
 
-**Proceso de instalación:**
-- **Descarga:** [Describir el proceso]
-- **Opciones del instalador:** [Documentar las opciones que se consideraron importantes]
-- **Verificación:** [Cómo verificar que funciona]
+---
 
-*Es posible documentar múltiples métodos.*
+**Proceso de instalación:**
+
+- **Descarga:** Accede a la página oficial:
+    ![Página oficial de VS Code](screenshots/image1.png)
+    Haz clic en el botón correspondiente a tu sistema operativo:
+    ![Descarga del instalador](screenshots/image2.png)
+    Guarda el archivo `.exe`, `.deb`, `.rpm` o `.pkg` según corresponda.
+
+
+- **Opciones del instalador:** 
+    Durante la instalación selecciona:
+
+  - **Agregar al PATH**
+  - **Registrar como editor predeterminado**
+  - **Habilitar Code en el menú contextual**
+  - **Instalar para todos los usuarios** (si está disponible)
+
+![Opciones del instalador](screenshots/image3.png)
+
+Estas opciones permiten que VS Code pueda ejecutarse desde accesos directos, integrarse con archivos de código y ampliar las funciones del explorador del sistema.
+
+---
+
+
+- **Verificación:** 
+    Una vez instalado:
+
+    1. Abre VS Code desde el icono del escritorio o menú inicio.
+   
+    2. Verifica que la ventana inicial carga correctamente.
+   
+    3. Comprueba las rutas internas desde *Help → About*.
+
+
+![VS Code abierto](screenshots/image4.png)
+
+    
+![About de VS Code](screenshots/image5.png)
+
+---
 
 ### Uso Básico de VS Code
 
@@ -114,74 +150,137 @@ Ejemplos:
 ### Instalación
 
 **Proceso de instalación:**
-- **Descarga:** [Versión recomendada - Community/Professional]
-- **Componentes necesarios:** [Componentes específicos para C#]
-- **Verificación:** [Cómo confirmar instalación correcta]
+- **Descarga:** Dirígete a la página oficial de Visual Studio en (https://visualstudio.microsoft.com/es/) y descarga la versión Community, que es gratuita y suficiente para desarrollo en C#. 
+
+    ![click en descargas](screenshots/image1.png)
+- **Componentes necesarios:** Al abrir el instalador, selecciona la carga de trabajo Desarrollo de escritorio con .NET. Esta incluye todo lo necesario para crear y ejecutar aplicaciones en C#. Opcionalmente, puedes seleccionar ASP.NET y desarrollo web si planeas usar proyectos web más adelante.
+  
+     ![click en descargas](screenshots/image2.png) 
+- **Verificación:** Una vez finalizada la instalación, abre Visual Studio. En la ventana de inicio, haz clic en Crear un nuevo proyecto y verifica que aparece la opción Aplicación de consola (.NET Core / .NET 6/7/8). Si aparece, la instalación se ha realizado correctamente.
+  
+    ![click en descargas](screenshots/image3.png)
 
 ### Desarrollo con C#
 
 **Creación de proyecto:**
-[Describir el proceso para crear un proyecto C# en Visual Studio]
+
+1. Abre Visual Studio.
+
+2. Selecciona Crear un nuevo proyecto.
+
+3. Filtra por C# y selecciona Aplicación de consola (.NET).
+
+4. Asigna un nombre al proyecto y selecciona la ubicación.
+
+5. Haz clic en Crear.
+
+    ![click en descargas](screenshots/image4.png)
 
 **Flujo de trabajo básico:**
-- Compilación y ejecución
-- Uso de Solution Explorer
-- Debugging básico
+- Compilación y ejecución:
+Pulsa Ctrl + F5 para ejecutar sin depurar o F5 para ejecutar con depuración.
+
+- Uso de Solution Explorer:
+Aquí puedes navegar entre archivos del proyecto, referencias y dependencias.
+
+- Debugging básico:
+Coloca breakpoints en el código y usa el panel de depuración para inspeccionar variables y controlar la ejecución.
 
 ---
 
 ## Configuración de Lenguaje Adicional
 
-**Lenguaje seleccionado:** [Java/Python/Otro] - **Justificación:** [Por qué se eligió este lenguaje]
+**Lenguaje seleccionado:** Python - **Justificación:** Lenguaje ampliamente usado para desarrollo rápido, scripting, ciencia de datos y automatización.
 
 ### Instalación del Entorno
 
 **Runtime/SDK:**
-- **Descarga e instalación:** [Proceso paso a paso]
-- **Verificación:** [Cómo confirmar que funciona]
+- **Descarga e instalación:** 
+
+  - Dirígete a [[Enlace](https://www.python.org/downloads/)]
+
+  - Descarga la última versión estable.
+
+  - Asegúrate de marcar la opción Add Python to PATH durante la instalación.
+
+
+- **Verificación:** 
+
+    - Abre una terminal y ejecuta:
+
+            python --version
+
+
+    - Debe mostrar la versión instalada.
+
 
 ### Configuración en VS Code
 
 **Extensiones por lenguaje:**
 
-*Para Java:*
-- **Paquete completo de Java**: Incluye compilación, debugging y gestión de proyectos
-
 *Para Python:*
-- **Soporte oficial de Python**: Extensión completa con intérprete y debugging
 
-*Para otros lenguajes:*
-- Busca la extensión oficial del lenguaje que proporcione soporte completo
+- Python : Incluye soporte completo de intérprete, linting, debugging y Jupyter Notebook.
 
-**Configuraciones específicas aplicadas:**
-[Documentar los ajustes que se realizaron, como configuración del intérprete, formateo automático, linting, etc.]
+- Configuraciones específicas aplicadas:
 
-### Proyecto de Ejemplo
+    - Selección del intérprete: Ctrl+Shift+P → Python: Select Interpreter
+
+    - Formateo automático: Activar Format On Save
+
+    - Linting: Activar Pylint para mejorar calidad de código
+
+### Proyecto de Ejemplo ###
 
 **Código desarrollado:**
-```[lenguaje]
-// Código de ejemplo aquí
-// Comentarios explicativos
+```
+# HolaMundo.py
+# Programa sencillo que imprime un mensaje en pantalla
+
+def main():
+    print("¡Hola, mundo!")
+
+if __name__ == "__main__":
+    main()
 ```
 
 **Proceso de ejecución:**
-[Describir cómo ejecutar el código]
+
+1. Abre el archivo HolaMundo.py en VS Code.
+
+2. Pulsa F5 para ejecutar con debugging o Ctrl+F5 para ejecutar sin debugging.
+
+3. Observa la salida en la terminal integrada.
 
 ---
 
 ## Configuraciones Recomendadas
 
 **Configuraciones generales:**
-[Documentar configuraciones que se consideran útiles para cualquier desarrollador]
+- Activar autosave y formateo automático
+
+- Configurar tema oscuro y tipografía clara
+
+- Ajustar tamaño de fuente y espaciado de tabulación según preferencia
 
 **Herramientas adicionales:**
-[Extensions, herramientas CLI, o utilidades que se consideran beneficiosas]
+- Git y GitHub para control de versiones
+
+- Extensiones de snippets y productividad (ex: Prettier, Bracket Pair Colorizer)
 
 **Solución de problemas comunes:**
-[Problemas frecuentes durante la configuración y sus soluciones]
+- Problema: VS Code no detecta Python
+
+    - Solución: Ctrl+Shift+P → Python: Select Interpreter y elegir la ruta correcta
+
+- Problema: Error al ejecutar C#
+
+    - Solución: Verificar que la carga de trabajo de .NET está instalada correctamente
 
 **Recursos útiles:**
-- Enlace [Enlace]: [Descripción]
-- Documentación [Documentación]: [Descripción]
+- [[Enlace](https://learn.microsoft.com/es-es/visualstudio/?view=vs-2022)]: Guía completa sobre instalación, configuración, depuración y desarrollo de proyectos en Visual Studio, incluyendo tutoriales y referencias de C#.
+  
+- [[Documentación](https://learn.microsoft.com/es-es/visualstudio/?view=vs-2022)]: Referencia oficial del lenguaje Python, con tutoriales, librerías estándar, ejemplos de código y buenas prácticas de programación.
 
 ---
+
