@@ -4,9 +4,9 @@
 
 > **Nota importante**: Este documento se enfoca en aspectos técnicos y procedimientos. Para análisis comparativos, reflexiones personales y conclusiones, utiliza el archivo `CONCLUSIONES_EVALUACION.md`.
 
-**Autores**: [Nombre 1] y [Nombre 2]
-**Fecha V0**: [Fecha de entrega inicial]
-**Fecha V1**: [Fecha de entrega final]
+**Autores**: Daniel Hernandez Singuña
+**Fecha V0**: 20/09/25
+**Fecha V1**: 19/12/25
 
 ---
 
@@ -18,12 +18,48 @@
 
 > **💡 Sobre las imágenes**: Incluye capturas de pantalla para mostrar los diferentes pasos o resultados. Ejemplo: ![Descripción clara del contenido](screenshots/placeholder.png)`
 
-**Proceso de instalación:**
-- **Descarga:** [Describir el proceso]
-- **Opciones del instalador:** [Documentar las opciones que se consideraron importantes]
-- **Verificación:** [Cómo verificar que funciona]
+---
 
-*Es posible documentar múltiples métodos.*
+**Proceso de instalación:**
+
+- **Descarga:** Accede a la página oficial:
+    ![Página oficial de VS Code](screenshots/image1.png)
+    Haz clic en el botón correspondiente a tu sistema operativo:
+    ![Descarga del instalador](screenshots/image2.png)
+    Guarda el archivo `.exe`, `.deb`, `.rpm` o `.pkg` según corresponda.
+
+
+- **Opciones del instalador:** 
+    Durante la instalación selecciona:
+
+  - **Agregar al PATH**
+  - **Registrar como editor predeterminado**
+  - **Habilitar Code en el menú contextual**
+  - **Instalar para todos los usuarios** (si está disponible)
+
+![Opciones del instalador](screenshots/image3.png)
+
+Estas opciones permiten que VS Code pueda ejecutarse desde accesos directos, integrarse con archivos de código y ampliar las funciones del explorador del sistema.
+
+---
+
+
+- **Verificación:** 
+    Una vez instalado:
+
+    1. Abre VS Code desde el icono del escritorio o menú inicio.
+   
+    2. Verifica que la ventana inicial carga correctamente.
+   
+    3. Comprueba las rutas internas desde *Help → About*.
+
+
+![VS Code abierto](screenshots/image4.png)
+
+    
+![About de VS Code](screenshots/image5.png)
+
+---
 
 ### Uso Básico de VS Code
 
@@ -247,3 +283,4 @@ if __name__ == "__main__":
 - [[Documentación](https://learn.microsoft.com/es-es/visualstudio/?view=vs-2022)]: Referencia oficial del lenguaje Python, con tutoriales, librerías estándar, ejemplos de código y buenas prácticas de programación.
 
 ---
+
