@@ -1,8 +1,8 @@
 # Conclusiones y Evaluación - Entornos de Desarrollo C#
 
-**Autores**: [Nombre 1] y [Nombre 2]
-**Fecha Entrega Inicial**: [Fecha]
-**Fecha Entrega Final**: [Fecha]
+**Autores**: Daniel Hernández  
+**Fecha Entrega Inicial**: 20/09/2025  
+**Fecha Entrega Final**: 19/12/2025
 
 > **Instrucciones**: Completar la **Sección A** para la entrega inicial y **todas las secciones** para la entrega final. Indicar claramente qué partes corresponden a cada fase.
 
@@ -14,18 +14,18 @@
 
 | Aspecto | Visual Studio Code | Visual Studio |
 |---------|-------------------|---------------|
-| **Facilidad de instalación** | [Experiencia inicial] | [Experiencia inicial] |
-| **Primera impresión** | [Evaluación] | [Evaluación] |
-| **Configuración básica** | [Observación] | [Observación] |
-| **Soporte para C#** | [Análisis inicial] | [Análisis inicial] |
+| **Facilidad de instalación** | Fácil de instalar, rápido | Más pesado, tardó más |
+| **Primera impresión** | Interfaz limpia y simple | Muy completo y profesional |
+| **Configuración básica** | Hay que instalar extensiones | Todo listo al abrir |
+| **Soporte para C#** | Necesita instalar C# y .NET | Incluido por defecto |
 
 ### Preferencia Inicial
-**IDE que se prefiere tras la configuración inicial:** [Visual Studio Code / Visual Studio]
+**IDE que se prefiere tras la configuración inicial:** Visual Studio
 
 **Razones iniciales:**
-- [Primera razón basada en configuración inicial]
-- [Segunda razón basada en primeras pruebas]
-- [Tercera razón si aplica]
+- Todo viene listo para trabajar con C# sin instalar extras.
+- Herramientas gráficas ayudan a crear proyectos más rápido.
+- Interfaz más amigable para comenzar.
 
 ---
 
@@ -35,31 +35,36 @@
 
 | Aspecto | Visual Studio Code | Visual Studio |
 |---------|-------------------|---------------|
-| **Productividad real** | [Tras semanas de uso] | [Tras semanas de uso] |
-| **Facilidad para desarrollo** | [Experiencia práctica] | [Experiencia práctica] |
-| **Herramientas más utilizadas** | [Lo que realmente se usa] | [Lo que realmente se usa] |
-| **Valoración final** | [Evaluación final] | [Evaluación final] |
+| **Productividad real** | Muy bueno para proyectos medianos y pequeños | Excelente para proyectos grandes |
+| **Facilidad para desarrollo** | Flexible y rápido | Completo pero más pesado |
+| **Herramientas más utilizadas** | Extensiones, terminal integrada, depuración básica | Debugger avanzado, Solution Explorer |
+| **Valoración final** | Muy práctico y ligero | Muy completo y profesional |
 
 ### Evolución de la Preferencia
 
-**¿Cambió la preferencia inicial?** [Sí/No]
+**¿Cambió la preferencia inicial?** Sí
 
-**IDE preferido final:** [Visual Studio Code / Visual Studio]
+**IDE preferido final:** Visual Studio Code
 
-**Justificación del cambio o mantenimiento:**
-[Explicar cómo la experiencia práctica influyó en la decisión final]
+**Justificación del cambio o mantenimiento:**  
+Después de usar ambos por varias semanas, VS Code resultó más ágil y suficiente para el trabajo diario, aunque Visual Studio es mejor para proyectos grandes y complejos.
+
+---
 
 ### Principales Aprendizajes
 
 **Lo que no se esperaba al principio:**
-- [Descubrimiento 1]
-- [Descubrimiento 2]
+- VS Code puede funcionar casi como un IDE completo.
+- La depuración en VS Code es suficiente para proyectos académicos.
 
 **Características más valiosas en la práctica:**
-[Herramientas o funcionalidades que resultaron esenciales en el uso diario]
+- Paleta de comandos rápida
+- Terminal integrada
+- Extensiones por lenguaje
 
 **Características menos útiles de lo esperado:**
-[Funcionalidades que parecían importantes pero no se utilizaron frecuentemente]
+- Diseñadores visuales para proyectos simples
+- Algunas herramientas avanzadas de Visual Studio
 
 ---
 
@@ -67,30 +72,32 @@
 
 ### Aspectos Más Destacados
 
-**De Visual Studio Code:**
-[Lo que más destacó o resultó útil]
+**De Visual Studio Code:**  
+Ligero, rápido, flexible y funciona con varios lenguajes sin problema.
 
-**De Visual Studio:**
-[Lo que más destacó o resultó útil]
+**De Visual Studio:**  
+Muy completo, ideal para proyectos grandes, tiene todo integrado.
 
 ### Dificultades Encontradas
 
-**Problemas durante instalación/configuración:**
-[Describir problemas significativos y sus soluciones]
+**Problemas durante instalación/configuración:**  
+Seleccionar correctamente el SDK de .NET y el intérprete de Python en VS Code tomó algo de tiempo.
 
-**Curva de aprendizaje:**
-[Aspectos que requirieron más tiempo para dominar]
+**Curva de aprendizaje:**  
+Aprender a usar todas las extensiones y configuraciones de VS Code fue más lento que en Visual Studio.
+
+---
 
 ### Conocimientos Adquiridos
 
 **Principales aprendizajes técnicos:**
-1. [Aprendizaje técnico 1]
-2. [Aprendizaje técnico 2]
-3. [Aprendizaje técnico 3]
+1. Configurar un entorno completo para C# y Python.
+2. Uso de depuración en ambos IDEs.
+3. Diferencias prácticas entre IDE liviano y completo.
 
 **Habilidades desarrolladas:**
-- [Habilidad práctica 1]
-- [Habilidad práctica 2]
+- Configurar entornos de desarrollo.
+- Resolver problemas de instalación y configuración.
 
 ---
 
@@ -98,45 +105,50 @@
 
 ### Recomendación Principal
 
-**Para desarrollo en C#, se recomienda:** [Visual Studio Code / Visual Studio]
+**Para desarrollo en C#, se recomienda:** Visual Studio Code
 
-**Justificación basada en experiencia:**
-[Explicación fundamentada en el uso real de ambas herramientas]
+**Justificación basada en experiencia:**  
+VS Code es rápido, flexible y suficiente para la mayoría de proyectos. Con extensiones, se puede trabajar igual de bien que en un IDE completo, pero con menos consumo de recursos.
+
+---
 
 ### Configuraciones Esenciales
 
 **Configuraciones indispensables para productividad:**
-1. [Configuración crítica 1]
-2. [Configuración crítica 2]
-3. [Configuración crítica 3]
+1. Formateo automático al guardar
+2. Atajos de teclado personalizados
+3. Selección correcta del SDK y extensiones
 
 **Extensiones que no pueden faltar:**
-- [Extensión esencial 1]
-- [Extensión esencial 2]
+- C# Dev Kit
+- Python
+- GitLens
+
+---
 
 ### Para Futuros Desarrolladores
 
 **Consejos para alguien que inicia con C#:**
-- [Consejo práctico 1]
-- [Consejo práctico 2]
-- [Consejo práctico 3]
+- Instalar el SDK de .NET correctamente
+- Aprender a usar el depurador
+- Documentar la configuración del entorno
 
 **Errores a evitar:**
-- [Error común 1 y cómo evitarlo]
-- [Error común 2 y cómo evitarlo]
+- Ejecutar todo desde consola sin usar el IDE
+- No verificar que el SDK esté correctamente instalado
 
 ---
 
 ## 🤝 Trabajo en Equipo
 
 ### Organización del Trabajo
-[Describir brevemente cómo se dividieron las tareas entre los integrantes]
+Cada integrante se encargó de una parte: instalación, configuración, pruebas y documentación.
 
 ### Beneficios de la Colaboración
-[Ventajas identificadas al trabajar en equipo en este proyecto]
+Aunque el proyecto fue individual, tener ejemplos y guías de compañeros ayudó a comparar métodos.
 
 ### Mejoras para Futuros Proyectos
-[Sugerencias para optimizar la colaboración en proyectos similares]
+Planificar capturas y pruebas antes de documentar, para ahorrar tiempo.
 
 ---
 
@@ -144,15 +156,15 @@
 
 ### Valor del Enfoque de Dos Fases
 
-**Principal beneficio de evaluar antes y después del uso:**
-[En 2-3 líneas: valor de contrastar impresiones iniciales con experiencia real]
+**Principal beneficio de evaluar antes y después del uso:**  
+Se pueden comparar expectativas iniciales con resultados reales, lo que ayuda a elegir el mejor IDE según el proyecto.
 
-**¿Se recomienda esta metodología de evaluación?** [Sí/No]
-**¿Por qué?** [Justificación del enfoque progresivo]
+**¿Se recomienda esta metodología de evaluación?** Sí  
+**¿Por qué?** Porque permite tomar decisiones fundamentadas y basadas en experiencia real.
 
 ### Reflexión Personal
 
-**Lo más valioso del ejercicio:**
-[Principal aprendizaje o insight obtenido del proceso completo]
+**Lo más valioso del ejercicio:**  
+Aprender que un IDE ligero como VS Code puede ser igual de eficiente que uno completo, siempre que se configure bien y se use con disciplina.
 
 ---

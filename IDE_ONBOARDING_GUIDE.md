@@ -4,26 +4,61 @@
 
 > **Nota importante**: Este documento se enfoca en aspectos técnicos y procedimientos. Para análisis comparativos, reflexiones personales y conclusiones, utiliza el archivo `CONCLUSIONES_EVALUACION.md`.
 
-**Autores**: [Nombre 1] y [Nombre 2]
-**Fecha V0**: [Fecha de entrega inicial]
-**Fecha V1**: [Fecha de entrega final]
+**Autores**: Daniel Hernandez Singuña  
+**Fecha V0**: 20/09/25  
+**Fecha V1**: 19/12/25  
 
 ---
 
 ## Visual Studio Code - Entorno Principal
 
+Visual Studio Code es un editor de código multiplataforma que, mediante extensiones, permite trabajar como un IDE completo para múltiples lenguajes. En esta guía se documenta su uso como entorno principal de desarrollo.
+
 ### Instalación y Verificación
 
-**Método de instalación:** [Especifica el método recomendado]
+**Método de instalación:**  
 
-> **💡 Sobre las imágenes**: Incluye capturas de pantalla para mostrar los diferentes pasos o resultados. Ejemplo: ![Descripción clara del contenido](screenshots/placeholder.png)`
+Descarga desde la página oficial mediante navegador web.
+
+---
 
 **Proceso de instalación:**
-- **Descarga:** [Describir el proceso]
-- **Opciones del instalador:** [Documentar las opciones que se consideraron importantes]
-- **Verificación:** [Cómo verificar que funciona]
 
-*Es posible documentar múltiples métodos.*
+- **Descarga:** Accede a la página oficial:
+  
+  ![Página oficial de VS Code](screenshots/image1.png)
+
+  Haz clic en el botón correspondiente a tu sistema operativo:
+  
+  ![Descarga del instalador](screenshots/image2.png)
+
+  Guarda el archivo `.exe`, `.deb`, `.rpm` o `.pkg` según corresponda.
+
+- **Opciones del instalador:**  
+  Durante la instalación selecciona:
+
+  - **Agregar al PATH**
+  - **Registrar como editor predeterminado**
+  - **Habilitar Code en el menú contextual**
+  - **Instalar para todos los usuarios** (si está disponible)
+
+  ![Opciones del instalador](screenshots/image3.png)
+
+Estas opciones permiten que VS Code pueda ejecutarse desde accesos directos, integrarse con archivos de código y ampliar las funciones del explorador del sistema.
+
+---
+
+- **Verificación:**  
+  Una vez instalado:
+
+  1. Abre VS Code desde el icono del escritorio o menú inicio.
+  2. Verifica que la ventana inicial carga correctamente.
+  3. Comprueba las rutas internas desde *Help → About*.
+
+  ![VS Code abierto](screenshots/image4.png)
+  ![About de VS Code](screenshots/image5.png)
+
+---
 
 ### Uso Básico de VS Code
 
@@ -33,79 +68,163 @@
 - Uso de la paleta de comandos
 - Gestión de archivos y carpetas
 
+![Interfaz principal de VS Code](screenshots/image6.png)
+![Explorador de archivos](screenshots/image7.png)
+![Paleta de comandos](screenshots/image8.png)
+
+---
+
 ### Personalización del Entorno
 
-**Configuraciones aplicadas:** [Describir las personalizaciones que se realizaron]
+**Configuraciones aplicadas:**  
 
-*Ejemplos de configuraciones útiles (elegir las que se consideren relevantes):*
+Se personalizó el entorno visual y funcional de VS Code para mejorar la legibilidad, productividad y comodidad durante el desarrollo.
 
-**Temas e iconos:**
-Ejemplos:
-- Material Theme, One Dark Pro
-- File Icon Theme para mejor identificación de archivos
+![Settings generales](screenshots/image9.png)
 
-**Configuración de fuentes:**
-Ejemplos:
-- Fira Code, JetBrains Mono (con ligaduras)
+---
+
+**Temas e iconos:**  
+Se instaló un tema oscuro y un paquete de iconos desde la sección de extensiones.
+
+- Tema aplicado: One Dark Pro  
+- Iconos: Material Icon Theme
+
+![Tema visual](screenshots/image10.png)
+![Iconos de archivos](screenshots/image11.png)
+
+---
+
+**Configuración de fuentes:**  
+Se configuró una fuente monoespaciada adecuada para programación.
+
+- Fuente: Fira Code  
+- Ligaduras activadas
+
+![Configuración de fuente](screenshots/image12.png)
+
+---
 
 **Atajos de teclado útiles:**
-Ejemplos:
-- Ctrl+/ para comentar/descomentar
-- Ctrl+Shift+P para paleta de comandos
-- Ctrl+` para terminal integrada
-- Alt+↑/↓ para mover líneas
+
+- Ctrl+/ para comentar o descomentar código  
+- Ctrl+Shift+P para abrir la paleta de comandos  
+- Ctrl+` para abrir la terminal integrada  
+- Alt+↑/↓ para mover líneas de código  
+
+![Atajos de teclado](screenshots/image13.png)
+
+---
 
 **Configuración del editor:**
-Ejemplos:
-- Formateo automático al guardar
-- Detección automática de indentación
-- Word wrap para líneas largas
+
+- Formateo automático al guardar  
+- Detección automática de indentación  
+- Ajuste de líneas largas (word wrap)  
+
+![Configuración del editor](screenshots/image14.png)
+
+---
 
 **Terminal integrada:**
-Ejemplos:
-- PowerShell como terminal predeterminado
-- Configuración de perfil personalizado
 
-> **Personaliza según tus necesidades**: Estas son sugerencias basadas en prácticas comunes. Experimenta y documenta las configuraciones que encuentres más útiles para tu flujo de trabajo.> 💼 **Manual de Incorporación**: Esta guía establece los estándares del equipo para configurar entornos de desarrollo en C#. Cualquier nuevo desarrollador debe poder seguir estas instrucciones para configurar su entorno de trabajo de manera consistente con el resto del equipo.
+- Terminal predeterminada configurada como PowerShell  
+- Uso de la terminal integrada para mostrar salidas de ejecución  
+
+![Terminal integrada](screenshots/image15.png)
+
+---
 
 ### SDK .NET
 
 **Proceso de instalación:**
-1. **Descarga e instalación:** [Describir el proceso]
-2. **Verificación:** [Cómo comprobar que funciona]
+
+1. **Descarga e instalación:**  
+   Se descarga el SDK .NET desde la página oficial de Microsoft y se ejecuta el instalador con las opciones predeterminadas.
+
+   ![Descarga SDK .NET](screenshots/image16.png)
+
+2. **Verificación:**  
+   VS Code reconoce automáticamente el SDK al crear un proyecto C#.
+
+   ![SDK reconocido](screenshots/image17.png)
+
+---
 
 ### Configuración para C#
 
 **Extensiones esenciales:**
-- **Soporte oficial para C#**: Extensión que proporciona IntelliSense, debugging y compilación
+- **Soporte oficial para C#** (C# Dev Kit)
 
+![Extensión C# instalada](screenshots/image18.png)
 
-**Configuraciones específicas para C#:** 
-[Describir las configuraciones que se aplicaron, como formateo automático, intellisense, o configuraciones del compilador]
+---
+
+**Configuraciones específicas para C#:**  
+Se habilitó IntelliSense, formateo automático y soporte de depuración integrado.
+
+![Configuración C#](screenshots/image19.png)
+
+---
 
 **Debugging básico:**
-- Configuración de puntos de interrupción (breakpoints)
-- Ejecutar y depurar
+- Uso de puntos de interrupción
+- Ejecución con y sin depuración
 - Inspección de variables
 
-> **Enfoque práctico**: Concentra tu documentación en las funcionalidades básicas que usarás día a día.
+![Debugging C#](screenshots/image20.png)
+
+---
 
 ### Flujo de Trabajo con C#
 
 **Creación de proyectos:**
-[Documentar el proceso para crear proyectos C#]
+
+1. Abrir la paleta de comandos.
+2. Seleccionar `.NET: New Project`.
+3. Elegir **Console Application**.
+4. Asignar nombre y ubicación al proyecto.
+
+![Creación proyecto C#](screenshots/image21.png)
+
+---
 
 **Estructura de proyecto:**
 ```csharp
-// Incluir aquí un ejemplo del código desarrollado
-// Comentarios sobre las decisiones tomadas
-```
+using System;
 
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hola mundo desde C# en VS Code");
+    }
+}
+
+```
 **Compilación y ejecución:**
-[Proceso para compilar y ejecutar proyectos]
+
+El proceso de compilación y ejecución de proyectos C# en Visual Studio Code se realiza directamente desde el propio editor utilizando el SDK .NET instalado previamente.
+
+1. Abre el proyecto C# en VS Code.
+2. Verifica que el archivo `Program.cs` contiene el método `Main`.
+3. Ejecuta el proyecto pulsando **Ctrl + F5** para ejecutar sin depuración.
+4. La salida del programa se muestra en la terminal integrada.
+
+![Compilación y ejecución C#](screenshots/image31.png)
+
+---
 
 **Debugging:**
-[Configuración y uso de debugging]
+
+La depuración permite analizar el comportamiento del programa durante su ejecución.
+
+1. Coloca un breakpoint haciendo clic a la izquierda del número de línea.
+2. Pulsa **F5** para iniciar la ejecución en modo depuración.
+3. Observa el valor de las variables en el panel de depuración.
+4. Usa los controles de continuar, paso a paso y detener ejecución.
+
+![Debugging en C#](screenshots/image32.png)
 
 ---
 
@@ -114,74 +233,163 @@ Ejemplos:
 ### Instalación
 
 **Proceso de instalación:**
-- **Descarga:** [Versión recomendada - Community/Professional]
-- **Componentes necesarios:** [Componentes específicos para C#]
-- **Verificación:** [Cómo confirmar instalación correcta]
+
+- **Descarga:** Dirígete a la página oficial de Visual Studio en (https://visualstudio.microsoft.com/es/) y descarga la versión Community, que es gratuita y suficiente para desarrollo en C#.
+
+  ![click en descargas](screenshots/image33.png)
+
+- **Componentes necesarios:**  
+  Al abrir el instalador, selecciona la carga de trabajo **Desarrollo de escritorio con .NET**. Esta incluye todo lo necesario para crear y ejecutar aplicaciones en C#. Opcionalmente, puedes seleccionar **ASP.NET y desarrollo web** si planeas usar proyectos web más adelante.
+
+  ![Componentes del instalador](screenshots/image34.png)
+
+- **Verificación:**  
+  Una vez finalizada la instalación, abre Visual Studio. En la ventana de inicio, haz clic en **Crear un nuevo proyecto** y verifica que aparece la opción **Aplicación de consola (.NET Core / .NET 6/7/8)**. Si aparece, la instalación se ha realizado correctamente.
+
+  ![Verificación Visual Studio](screenshots/image35.png)
+
+---
 
 ### Desarrollo con C#
 
 **Creación de proyecto:**
-[Describir el proceso para crear un proyecto C# en Visual Studio]
+
+1. Abre Visual Studio.
+2. Selecciona **Crear un nuevo proyecto**.
+3. Filtra por **C#** y selecciona **Aplicación de consola (.NET)**.
+4. Asigna un nombre al proyecto y selecciona la ubicación.
+5. Haz clic en **Crear**.
+
+![Creación de proyecto en Visual Studio](screenshots/image36.png)
+
+---
 
 **Flujo de trabajo básico:**
-- Compilación y ejecución
-- Uso de Solution Explorer
-- Debugging básico
+
+- **Compilación y ejecución:**  
+  Pulsa **Ctrl + F5** para ejecutar sin depurar o **F5** para ejecutar con depuración.
+
+- **Uso de Solution Explorer:**  
+  Permite navegar entre archivos del proyecto, referencias y dependencias.
+
+- **Debugging básico:**  
+  Se utilizan breakpoints y el panel de depuración para inspeccionar variables y controlar la ejecución.
+
+![Flujo de trabajo Visual Studio](screenshots/image37.png)
 
 ---
 
 ## Configuración de Lenguaje Adicional
 
-**Lenguaje seleccionado:** [Java/Python/Otro] - **Justificación:** [Por qué se eligió este lenguaje]
+**Lenguaje seleccionado:** Python - **Justificación:** Lenguaje ampliamente usado para desarrollo rápido, scripting, ciencia de datos y automatización.
 
 ### Instalación del Entorno
 
 **Runtime/SDK:**
-- **Descarga e instalación:** [Proceso paso a paso]
-- **Verificación:** [Cómo confirmar que funciona]
+
+- **Descarga e instalación:**
+
+  - Dirígete a https://www.python.org/downloads/
+  - Descarga la última versión estable.
+  - Marca la opción **Add Python to PATH** durante la instalación.
+
+  ![Instalación de Python](screenshots/image38.png)
+
+- **Verificación:**
+
+  - Abre una terminal y ejecuta:
+
+        python --version
+
+  - El sistema muestra la versión instalada correctamente.
+
+  ![Verificación Python](screenshots/image39.png)
+
+---
 
 ### Configuración en VS Code
 
 **Extensiones por lenguaje:**
 
-*Para Java:*
-- **Paquete completo de Java**: Incluye compilación, debugging y gestión de proyectos
-
 *Para Python:*
-- **Soporte oficial de Python**: Extensión completa con intérprete y debugging
 
-*Para otros lenguajes:*
-- Busca la extensión oficial del lenguaje que proporcione soporte completo
+- **Python**: Incluye soporte completo de intérprete, linting, debugging y Jupyter Notebook.
 
-**Configuraciones específicas aplicadas:**
-[Documentar los ajustes que se realizaron, como configuración del intérprete, formateo automático, linting, etc.]
-
-### Proyecto de Ejemplo
-
-**Código desarrollado:**
-```[lenguaje]
-// Código de ejemplo aquí
-// Comentarios explicativos
-```
-
-**Proceso de ejecución:**
-[Describir cómo ejecutar el código]
+![Extensión Python VS Code](screenshots/image40.png)
 
 ---
+
+**Configuraciones específicas aplicadas:**
+
+- Selección del intérprete: **Ctrl+Shift+P → Python: Select Interpreter**
+- Activación de **Format On Save**
+- Activación de **Pylint** para mejorar la calidad del código
+
+![Configuración Python](screenshots/image41.png)
+
+---
+
+### Proyecto de Ejemplo ###
+
+**Código desarrollado:**
+
+![Código Python](screenshots/image42.png)
+
+---
+
+**Proceso de ejecución:**
+
+1. Abre el archivo `HolaMundo.py` en Visual Studio Code.
+2. Pulsa **F5** para ejecutar con debugging o **Ctrl+F5** para ejecutar sin debugging.
+3. Observa la salida en la terminal integrada.
+
+![Ejecución Python](screenshots/image43.png)
 
 ## Configuraciones Recomendadas
 
 **Configuraciones generales:**
-[Documentar configuraciones que se consideran útiles para cualquier desarrollador]
+- Activar **Auto Save** desde *File → Auto Save*.
+- Activar formateo automático al guardar desde *Settings → Editor: Format On Save*.
+- Configurar un tema oscuro para reducir la fatiga visual.
+- Ajustar el tamaño de fuente y el espaciado de tabulación según preferencia.
+
+![Auto Save activado](screenshots/image44.png)
+![Format On Save](screenshots/image45.png)
+
+---
 
 **Herramientas adicionales:**
-[Extensions, herramientas CLI, o utilidades que se consideran beneficiosas]
+- **Git** para control de versiones local.
+- **GitHub** para alojamiento de repositorios y trabajo colaborativo.
+- Extensiones de productividad como:
+  - Prettier
+  - GitLens
+  - Bracket Pair Colorizer
+
+![Extensiones adicionales](screenshots/image46.png)
+
+---
 
 **Solución de problemas comunes:**
-[Problemas frecuentes durante la configuración y sus soluciones]
+
+- **Problema:** Visual Studio Code no detecta Python  
+  **Solución:**  
+  Abrir la paleta de comandos con **Ctrl+Shift+P**, seleccionar **Python: Select Interpreter** y elegir la ruta correcta del intérprete instalado.
+
+![Selección de intérprete](screenshots/image47.png)
+
+---
+
+- **Problema:** Error al ejecutar C#  
+  **Solución:**  
+  Verificar que el SDK de .NET está instalado correctamente y que la extensión **C# Dev Kit** está habilitada en Visual Studio Code.
+
+![Error C#](screenshots/image48.png)
+
+---
 
 **Recursos útiles:**
-- Enlace [Enlace]: [Descripción]
-- Documentación [Documentación]: [Descripción]
+- [[Enlace](https://learn.microsoft.com/es-es/visualstudio/?view=vs-2022)]: Guía completa sobre instalación, configuración, depuración y desarrollo de proyectos en Visual Studio y Visual Studio Code.
+- [[Documentación](https://learn.microsoft.com/es-es/python/)]: Documentación oficial de Python con ejemplos, librerías estándar y buenas prácticas.
 
 ---
